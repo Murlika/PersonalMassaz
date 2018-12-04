@@ -1,0 +1,33 @@
+{
+  "0": {
+    "id": 1,
+    "text": "Home",
+    "link": "#",
+    "isCurrent": true
+  },
+  "1": {
+    "id": 2,
+    "text": "Обо мне",
+    "link": "#about",
+    "isCurrent": false
+  },
+  "2": {
+    "id": 3,
+    "text": "Виды массажа",
+    "link": "#services",
+    "isCurrent": false
+  },
+  "3": {
+    "id": 4,
+    "text": "Стоимость",
+    "link": "#prices",
+    "isCurrent": false
+  },
+  "4": {
+    "id": 5,
+    "text": "Контакты",
+    "link": "#contact",
+    "isCurrent": false
+  }  
+  
+}

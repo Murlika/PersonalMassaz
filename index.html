@@ -1,0 +1,149 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Персональный сайт массажиста Андрея Олеговича</title>
+	
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Массаж, Ванин Андрей Олегович" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--// Meta tag Keywords -->
+    
+	<!-- css files -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+	<!-- //css files -->
+	
+	<!--web font-->
+	<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+	<!--//web font-->
+
+</head>
+
+<body>
+    <div id="body">
+      <header>	
+          <div class="container">
+            <!-- nav -->
+                          <nav class="navbar navbar-expand-lg navbar-light py-4">
+                                  <!-- logo -->
+                                  <h1>
+                                          <a class="navbar-brand" href="index.html" v-html="title"></a>
+                                  </h1>
+                                  <!-- //logo -->
+                                  <button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                      <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                  <!-- main nav -->
+
+                                  <top-menu v-bind:top-menu-items="topMenuItems"></top-menu>
+
+                                  <!-- //main nav -->
+                          </nav>
+            <!-- //nav -->
+          </div>
+      </header>
+
+
+      <!-- banner -->
+      <section class="banner">
+              <div class="banner-layer">
+                      <div class="container">
+                              <div class="row agile_banner_info">
+                                      <div class="col-md-7 agile_banner_margin">
+                                        <div v-html="aboutMeText"></div>
+                                              <a href="#"> Хочу больше </a>
+                                      </div>
+                                      <div class="col-md-5 image_margin">
+                                              <img src="images/img1.png" alt="" class="img-fluid" />
+                                      </div>
+                              </div>
+                      </div>
+              </div>
+      </section>
+      <!-- //banner -->	
+
+      <!-- about -->
+      <section class="about py-5" id="about">
+        <about-me v-bind:about-me="aboutMe"></about-me>
+      </section>
+      <!-- about -->
+
+      <!-- services -->
+      <section class="services py-5" id="services">
+        <my-services  v-bind:my-services="myServices" title='Виды массажа'></my-services>
+      </section>
+      <!-- //services -->
+
+      <!-- experience -->
+      <section class="experience py-5" id="prices">
+        <my-prices title="Мои цены" v-bind:my-prices="myPrices"></my-prices>                           
+      </section>
+      <!-- //experience -->
+
+      <!-- blog -->
+      <section class="blog py-5" id="blog">
+        <my-blog title="Мои истории" v-bind:my-news="myNews" v-bind:my-news-text="myNewsText"></my-blog>
+      </section>
+      <!-- //blog -->
+
+      <!-- gallery -->
+          <div class="gallery py-5" id="projects">
+                <my-projects v-bind:my-projects="myProjects" title="Моя работа"></my-projects>
+          </div>
+      <!-- //gallery --> 
+
+      <!-- Testimonials -->
+      <section class="testimonials py-5" id="testimonials">
+              <my-testimonials title="Отзывы" v-bind:my-testimonials="myTestimonials"><my-testimonials>  
+      </section>
+      <!-- Testimonials -->
+
+      <!-- contact -->
+      <section class="contact py-5" id="contact">
+        <contacts title="Контакты" v-bind:my-contacts="myContacts"></contacts>
+      </section>
+      <!-- //contact -->
+
+      <!-- footer -->
+      <footer class="py-5">
+              <div class="container">
+                      <div class="agileinfo-grids">
+                              <div class="agile-grid-left agile-grid-right text-center">
+                                <social v-bind:sosial="SocialMe"></social>
+                              </div>
+                      </div>
+                      <div class="copyright text-center">
+                              <p>© 2018 Personal View. All Rights Reserved | Design by <a href="http://w3layouts.com/"> W3layouts</a> </p>
+                      </div>
+              </div>
+      </footer>
+      <!-- //footer -->
+
+  <smoth-scrolling></smoth-scrolling>
+  
+  </div>
+  
+  <!-- for vue working -->
+  <script  type="text/javascript" src="dist/bundle.js"></script>
+  <!-- //for vue working --> 
+
+
+
+</body>
+</html>

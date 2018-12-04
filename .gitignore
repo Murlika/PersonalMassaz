@@ -1,0 +1,21 @@
+#Vendors
+/node_modules
+
+#Project configs
+
+# Ignore all logfiles and tempfiles.
+npm-debug.log
+nohup.out
+
+#Vargant files
+.vagrant
+
+#IDE files
+/nbproject
+
+
+#BD dump
+*.sql
+*.gz
+database/*.sql
+database/*.sql.bz2
