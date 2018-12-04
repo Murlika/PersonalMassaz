@@ -3,6 +3,9 @@
 
 #Project configs
 
+#Project build
+/dist
+
 # Ignore all logfiles and tempfiles.
 npm-debug.log
 nohup.out
